@@ -13,5 +13,10 @@ function SayName()
     return "Name";
 }
 
+function newFn()
+{
+    return "New function";
+}
+
 
 
