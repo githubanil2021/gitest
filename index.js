@@ -17,3 +17,9 @@ function SayName1051()
 {
     return "Name";
 }
+
+function SayName1052()
+{
+    return "Name";
+}
+
