@@ -13,11 +13,13 @@ function SayName()
     return "Name";
 }
 
-function SayName1051()
+<<<<<<< HEAD
+function newFn()
 {
-    return "Name";
+    return "New function1";
 }
 
+<<<<<<< HEAD
 function SayName1052()
 {
     return "Name";
@@ -27,5 +29,9 @@ function SayName1053()
 {
     return "Name";
 }
+=======
+=======
+>>>>>>> parent of e796abf (abc commit)
+>>>>>>> parent of 38e922b (testing revert1051)
 
 
