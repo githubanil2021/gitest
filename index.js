@@ -15,7 +15,7 @@ function SayName()
 
 function newFn()
 {
-    return "New function";
+    return "New function1";
 }
 
 
