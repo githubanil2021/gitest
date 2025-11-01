@@ -13,10 +13,13 @@ function SayName()
     return "Name";
 }
 
+<<<<<<< HEAD
 function newFn()
 {
     return "New function1";
 }
 
+=======
+>>>>>>> parent of e796abf (abc commit)
 
 
