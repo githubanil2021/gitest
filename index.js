@@ -13,13 +13,7 @@ function SayName()
     return "Name";
 }
 
-<<<<<<< HEAD
-function newFn()
+function SayName1051()
 {
-    return "New function1";
+    return "Name";
 }
-
-=======
->>>>>>> parent of e796abf (abc commit)
-
-
