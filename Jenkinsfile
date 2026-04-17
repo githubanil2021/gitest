@@ -1,33 +1,23 @@
-pipeline{
-    agent {
-        docker {
-            image 'node:20'
-            args '-u root'
-        }
-    }
-    
-    environment{
-        VERCEL_TOKEN = credentials('vercel_token')
-    }   
-    stages{
-        stage('Install'){
-            steps{
+pipeline {
+    agent any
+
+    stages {
+
+        stage('Install') {
+            steps {
                 sh 'npm install'
             }
         }
-        stage('Test'){
-            steps{
-                echo 'Skip Test ...'
+
+        stage('Build') {
+            steps {
+                sh 'npm run build'
             }
         }
-        stage('Build'){
-            steps{
-                bat 'npm run build'
-            }
-        }
-        stage('Deploy'){
-            steps{
-                bat 'npx vercel --prod --yes --token= %VERCEL_TOKEN%'
+
+        stage('Test') {
+            steps {
+                sh 'npm test || true'
             }
         }
     }
