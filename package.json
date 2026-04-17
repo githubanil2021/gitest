@@ -1,1 +1,9 @@
-
+{
+  "name": "nextjs-pipeline",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"No tests\""
+  },
+  "dependencies": {}
+}
