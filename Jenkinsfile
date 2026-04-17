@@ -1,5 +1,10 @@
 pipeline{
-    agent any
+    agent {
+        docker {
+            image 'node:20'
+            args '-u root'
+        }
+    }
     
     environment{
         VERCEL_TOKEN = credentials('vercel_token')
